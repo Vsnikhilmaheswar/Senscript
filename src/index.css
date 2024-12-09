@@ -7,11 +7,16 @@
   
 }
 
-.Container
+.container
 {
   background-color: white;
   text-align: center;
 }
 h1 ,h2 ,h3, h4,h5,h6,p{
   color: red;
+}
+.list{
+margin: 10px;
+border-radius: 10px;
+background-color: aqua;
 }

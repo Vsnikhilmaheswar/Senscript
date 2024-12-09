@@ -4,7 +4,7 @@ const App = () => {
   const [quotes, setQuotes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+ 
   setTimeout(() => {
     setIsLoading(false);
 }, 2000);
@@ -37,13 +37,13 @@ const App = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div>
-      <h1>Quotes</h1>
-      <ul>
+    <div className='container'>
+      <h1 >Quotes</h1>
+      <ul >
         {quotes.map(quote => (
-          <ol key={quote.id}>
+          <ol  className='list' key={quote.id}>
        
-            <p>{quote.id}) "{quote.quote}" - {quote.author}</p>
+            <p>{quote.id}) "{quote.quote}"  <br/>- {quote.author}</p>
           </ol>
         ))}
       </ul>
